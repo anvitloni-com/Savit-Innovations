@@ -55,3 +55,35 @@ body { font-family: 'Segoe UI', sans-serif; background: #f6f6f6; color: #111; }
     .cart-sidebar { width: 100%; }
     .hero-content h1 { font-size: 1.6rem; }
 }
+/* Ensure the card can position the badge correctly */
+.product-card {
+    position: relative; 
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The Sale Badge */
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #cc0c39; /* Red color for urgency */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 0.75rem;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    animation: badgePop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Animation to make it 'Pop' */
+@keyframes badgePop {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

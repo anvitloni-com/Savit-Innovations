@@ -96,6 +96,8 @@ function initProducts(list = products) {
         const defaultPrice = p.variants[0].price || "Pending";
         grid.innerHTML += `
             <div class="product-card">
+                <div class="sale-badge">55% OFF</div>
+                
                 <img src="${p.img}" alt="${p.name}">
                 <h3>${p.id}</h3>
                 <p class="price">₹<span id="display-price-${p.id}">${defaultPrice}</span></p>
@@ -122,7 +124,6 @@ function initProducts(list = products) {
             </div>`;
     });
 }
-
 function updateVariantPrice(pId) {
     const p = products.find(x => x.id === pId);
     const color = document.getElementById(`color-${pId}`).value;

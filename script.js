@@ -143,7 +143,7 @@ function filterProducts() {
 
 function checkoutWhatsApp() {
     if(cart.length === 0) return alert("Cart is empty");
-    let msg = "*ORDER FROM SAVIT INNOVATIONS*%0a%0a";
+    let msg = "*ORDER TO SAVIT INNOVATIONS*%0a%0a";
     cart.forEach((item, i) => {
         msg += `${i+1}. *${item.id}*%0a- Finish: ${item.color}%0a- Size: ${item.size}%0a- Qty: ${item.qty}%0a- Total: ₹${item.subtotal}%0a%0a`;
     });

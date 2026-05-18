@@ -1,58 +1,69 @@
 const products = [
     { 
-        id: "AH-001", 
-        name: "Premium Series AH-001", 
+        id: "AH-001",  
         category: "handels", 
         img: "AH 001 CP SATIN (1).jpg", // Change this filename to match your image path
         colorOptions: ["CP-SATIN", "RG-BS"],
         sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
         variants: [
-            { color: "CP-SATIN", size: "96mm", price: "" },
-            { color: "CP-SATIN", size: "160mm", price: "" },
-            { color: "CP-SATIN", size: "224mm", price: "" },
-            { color: "CP-SATIN", size: "288mm", price: "" },
-            { color: "RG-BS", size: "96mm", price: "" },
-            { color: "RG-BS", size: "160mm", price: "" },
-            { color: "RG-BS", size: "224mm", price: "" },
-            { color: "RG-BS", size: "288mm", price: "" }
+            { color: "CP-SATIN", size: "96mm", price: "175" },
+            { color: "CP-SATIN", size: "160mm", price: "276" },
+            { color: "CP-SATIN", size: "224mm", price: "385" },
+            { color: "CP-SATIN", size: "288mm", price: "461" },
+            { color: "RG-BS", size: "96mm", price: "175" },
+            { color: "RG-BS", size: "160mm", price: "276" },
+            { color: "RG-BS", size: "224mm", price: "385" },
+            { color: "RG-BS", size: "288mm", price: "461" }
         ]
     },
     { 
-        id: "AH-006", 
-        name: "Designer Series AH-006", 
+        id: "AH-006",  
         category: "handels", 
         img: "AH 006  (1).png",
-        colorOptions: ["Satin", "Rose Gold", "Titanium", "Chrome"],
+        colorOptions: ["Satin", "Rose Gold", "CP", "Black Satin"],
         sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
         variants: [
-            { color: "Satin", size: "96mm", price: "" },
-            { color: "Rose Gold", size: "96mm", price: "" },
-            { color: "Titanium", size: "96mm", price: "" },
-            { color: "Chrome", size: "96mm", price: "" }
-            // Add more sizes for each color as needed
+            { color: "Satin", size: "96mm", price: "120" },
+            { color: "Satin", size: "160mm", price: "178" },
+            { color: "Satin", size: "224mm", price: "230" },
+            { color: "Satin", size: "288mm", price: "280" }
+            { color: "Rose Gold", size: "96mm", price: "120" },
+            { color: "Rose Gold", size: "160mm", price: "178" },
+            { color: "Rose Gold", size: "224mm", price: "230" },
+            { color: "Rose Gold", size: "288mm", price: "280" }
+            { color: "CP", size: "96mm", price: "120" },
+            { color: "CP", size: "160mm", price: "178" },
+            { color: "CP", size: "224mm", price: "230" },
+            { color: "CP", size: "288mm", price: "280" }
+            { color: "Black Satin", size: "96mm", price: "120" },
+            { color: "Black Satin", size: "160mm", price: "178" },
+            { color: "Black Satin", size: "224mm", price: "230" },
+            { color: "Black Satin", size: "288mm", price: "280" }
         ]
     },
     { 
         id: "AH-009", 
-        name: "Luxury Series AH-009", 
         category: "handels", 
         img: "AH 009 GOLD-BLACK (1).jpg",
-        colorOptions: ["GOLD-BLACK", "RG-BS"],
+        colorOptions: ["GOLD BLACK", "RG BS", "CP SATIN"],
         sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
         variants: [
             { color: "GOLD-BLACK", size: "96mm", price: "" },
             { color: "GOLD-BLACK", size: "160mm", price: "" },
             { color: "GOLD-BLACK", size: "224mm", price: "" },
             { color: "GOLD-BLACK", size: "288mm", price: "" },
-            { color: "RG-BS", size: "96mm", price: "" },
-            { color: "RG-BS", size: "160mm", price: "" },
-            { color: "RG-BS", size: "224mm", price: "" },
-            { color: "RG-BS", size: "288mm", price: "" }
+            { color: "RG-BS", size: "96mm", price: "162" },
+            { color: "RG-BS", size: "160mm", price: "265" },
+            { color: "RG-BS", size: "224mm", price: "371" },
+            { color: "RG-BS", size: "288mm", price: "448" },
+            { color: "CP SATIN", size: "96mm", price: "162" },
+            { color: "CP SATIN", size: "160mm", price: "265" },
+            { color: "CP SATIN", size: "224mm", price: "371" },
+            { color: "CP SATIN", size: "288mm", price: "448" },
         ]
     },
     { 
-        id: "AH-018", 
-        name: "Elite Series AH-018", 
+        id: "AH-018",  
         category: "handels", 
         img: "AH 018 CHOCO BS (1).jpg",
         colorOptions: ["CHOCO-BS", "GOLD-BLACK"],
@@ -70,7 +81,6 @@ const products = [
     },
     { 
         id: "AH-024", 
-        name: "Twist Series AH-024", 
         category: "handels", 
         img: "AH 024 CP (1).jpg",
         colorOptions: ["CP", "SATIN", "ROSE-GOLD"],

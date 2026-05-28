@@ -1,97 +1,28 @@
 const products = [
     { 
-        id: "AH-001",  
+        id: "AH-001", 
+        name: "Architectural Handle AH-001", 
         category: "handels", 
-        img: "AH 001 CP SATIN (1).jpg", // Change this filename to match your image path
-        colorOptions: ["CP-SATIN", "RG-BS"],
+        img: "https://images.unsplash.com/photo-1623073344440-6216f9f30e9d?w=600",
+        colorOptions: ["RG-BS", "SATIN ROSE-GOLD", "BLACK-SATIN"],
         sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
         variants: [
-            { color: "CP-SATIN", size: "96mm", price: "175" },
-            { color: "CP-SATIN", size: "160mm", price: "276" },
-            { color: "CP-SATIN", size: "224mm", price: "385" },
-            { color: "CP-SATIN", size: "288mm", price: "461" },
-            { color: "RG-BS", size: "96mm", price: "175" },
-            { color: "RG-BS", size: "160mm", price: "276" },
-            { color: "RG-BS", size: "224mm", price: "385" },
-            { color: "RG-BS", size: "288mm", price: "461" }
+            { color: "RG-BS", size: "96mm", price: 500 },
+            { color: "RG-BS", size: "160mm", price: 650 },
+            { color: "SATIN ROSE-GOLD", size: "96mm", price: 700 },
+            { color: "BLACK-SATIN", size: "224mm", price: 950 }
         ]
     },
     { 
-        id: "AH-006",  
-        category: "handels", 
-        img: "AH 006  (1).png",
-        colorOptions: ["Satin", "Rose Gold", "CP", "Black Satin"],
-        sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
+        id: "AH-002", 
+        name: "Modern Knob AH-002", 
+        category: "knobs", 
+        img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600",
+        colorOptions: ["Chrome", "Gold"],
+        sizeOptions: ["25mm", "30mm"],
         variants: [
-            { color: "Satin", size: "96mm", price: "120" },
-            { color: "Satin", size: "160mm", price: "178" },
-            { color: "Satin", size: "224mm", price: "230" },
-            { color: "Satin", size: "288mm", price: "280" }
-            { color: "Rose Gold", size: "96mm", price: "120" },
-            { color: "Rose Gold", size: "160mm", price: "178" },
-            { color: "Rose Gold", size: "224mm", price: "230" },
-            { color: "Rose Gold", size: "288mm", price: "280" }
-            { color: "CP", size: "96mm", price: "120" },
-            { color: "CP", size: "160mm", price: "178" },
-            { color: "CP", size: "224mm", price: "230" },
-            { color: "CP", size: "288mm", price: "280" }
-            { color: "Black Satin", size: "96mm", price: "120" },
-            { color: "Black Satin", size: "160mm", price: "178" },
-            { color: "Black Satin", size: "224mm", price: "230" },
-            { color: "Black Satin", size: "288mm", price: "280" }
-        ]
-    },
-    { 
-        id: "AH-009", 
-        category: "handels", 
-        img: "AH 009 GOLD-BLACK (1).jpg",
-        colorOptions: ["GOLD BLACK", "RG BS", "CP SATIN"],
-        sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
-        variants: [
-            { color: "GOLD-BLACK", size: "96mm", price: "" },
-            { color: "GOLD-BLACK", size: "160mm", price: "" },
-            { color: "GOLD-BLACK", size: "224mm", price: "" },
-            { color: "GOLD-BLACK", size: "288mm", price: "" },
-            { color: "RG-BS", size: "96mm", price: "162" },
-            { color: "RG-BS", size: "160mm", price: "265" },
-            { color: "RG-BS", size: "224mm", price: "371" },
-            { color: "RG-BS", size: "288mm", price: "448" },
-            { color: "CP SATIN", size: "96mm", price: "162" },
-            { color: "CP SATIN", size: "160mm", price: "265" },
-            { color: "CP SATIN", size: "224mm", price: "371" },
-            { color: "CP SATIN", size: "288mm", price: "448" },
-        ]
-    },
-    { 
-        id: "AH-018",  
-        category: "handels", 
-        img: "AH 018 CHOCO BS (1).jpg",
-        colorOptions: ["CHOCO-BS", "GOLD-BLACK"],
-        sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
-        variants: [
-            { color: "CHOCO-BS", size: "96mm", price: "" },
-            { color: "CHOCO-BS", size: "160mm", price: "" },
-            { color: "CHOCO-BS", size: "224mm", price: "" },
-            { color: "CHOCO-BS", size: "288mm", price: "" },
-            { color: "GOLD-BLACK", size: "96mm", price: "" },
-            { color: "GOLD-BLACK", size: "160mm", price: "" },
-            { color: "GOLD-BLACK", size: "224mm", price: "" },
-            { color: "GOLD-BLACK", size: "288mm", price: "" }
-        ]
-    },
-    { 
-        id: "AH-024", 
-        category: "handels", 
-        img: "AH 024 CP (1).jpg",
-        colorOptions: ["CP", "SATIN", "ROSE-GOLD"],
-        sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
-        variants: [
-            { color: "CP", size: "96mm", price: "" },
-            { color: "CP", size: "160mm", price: "" },
-            { color: "SATIN", size: "96mm", price: "" },
-            { color: "SATIN", size: "160mm", price: "" },
-            { color: "ROSE-GOLD", size: "96mm", price: "" },
-            { color: "ROSE-GOLD", size: "288mm", price: "" }
+            { color: "Chrome", size: "25mm", price: 150 },
+            { color: "Gold", size: "25mm", price: 200 }
         ]
     }
 ];
@@ -103,12 +34,10 @@ function initProducts(list = products) {
     const grid = document.getElementById('product-grid');
     grid.innerHTML = '';
     list.forEach(p => {
-        const defaultPrice = p.variants[0].price || "Pending";
+        const defaultPrice = p.variants[0].price;
         grid.innerHTML += `
             <div class="product-card">
-                <div class="sale-badge">55% OFF</div>
-                
-                <img src="${p.img}" alt="${p.name}">
+                <img src="${p.img}">
                 <h3>${p.id}</h3>
                 <p class="price">₹<span id="display-price-${p.id}">${defaultPrice}</span></p>
                 <div class="selectors">
@@ -134,12 +63,13 @@ function initProducts(list = products) {
             </div>`;
     });
 }
+
 function updateVariantPrice(pId) {
     const p = products.find(x => x.id === pId);
     const color = document.getElementById(`color-${pId}`).value;
     const size = document.getElementById(`size-${pId}`).value;
     const variant = p.variants.find(v => v.color === color && v.size === size);
-    document.getElementById(`display-price-${pId}`).innerText = variant && variant.price !== "" ? variant.price : "Pending";
+    document.getElementById(`display-price-${pId}`).innerText = variant ? variant.price : "N/A";
 }
 
 function adjustQty(id, change) {
@@ -154,13 +84,8 @@ function addToCart(id) {
     const color = document.getElementById(`color-${id}`).value;
     const size = document.getElementById(`size-${id}`).value;
     const variant = p.variants.find(v => v.color === color && v.size === size);
+    const price = variant ? variant.price : 0;
     
-    if(!variant || variant.price === "") {
-        alert("Price for this selection is not set yet.");
-        return;
-    }
-
-    const price = parseFloat(variant.price);
     cart.push({ id, name: p.name, qty, color, size, price, subtotal: price * qty });
     updateCartUI();
     document.getElementById('cart-sidebar').classList.add('active');
@@ -189,6 +114,7 @@ function updateCartUI() {
     document.getElementById('cart-total').innerText = total;
 }
 
+// THE MISSING DELETE FUNCTION
 function removeItem(index) {
     cart.splice(index, 1);
     updateCartUI();

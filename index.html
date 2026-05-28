@@ -2,47 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savit Innovations | Premium Hardware</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <nav class="navbar">
         <div class="logo">Savit Innovations</div>
-        <div class="cart-icon" onclick="toggleCart()">
-            <i class="fas fa-shopping-cart"></i>
-            <span id="cart-count">0</span>
-        </div>
+        <div class="cart-icon" onclick="toggleCart()"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></div>
     </nav>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Premium Hardware for Modern Living</h1>
-            <p>Exclusive collection of AH-Series Handles and Knobs.</p>
-        </div>
-    </section>
-
     <section class="controls">
-        <input type="text" id="search-input" placeholder="Search product ID..." onkeyup="filterProducts()">
+        <input type="text" id="search-input" placeholder="Search AH-001..." onkeyup="filterProducts()">
         <div class="filter-container">
             <button class="filter-btn active" onclick="setCategory('all', this)">All</button>
             <button class="filter-btn" onclick="setCategory('handels', this)">Handles</button>
         </div>
     </section>
-
     <main class="product-grid" id="product-grid"></main>
-
     <div id="cart-sidebar" class="cart-sidebar">
-        <div class="cart-header"><h3>Your Cart</h3><span onclick="toggleCart()">&times;</span></div>
+        <div class="cart-header"><h3>Cart</h3><span onclick="toggleCart()">&times;</span></div>
         <div id="cart-items"></div>
         <div class="cart-footer">
-            <div class="total-row"><span>Total:</span> ₹<span id="cart-total">0</span></div>
-            <button class="checkout-btn" onclick="checkoutWhatsApp()">Confirm via WhatsApp</button>
+            <p>Total: ₹<span id="cart-total">0</span></p>
+            <button onclick="checkoutWhatsApp()">Confirm Order</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>

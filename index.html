@@ -21,43 +21,27 @@
         <div class="hero-content">
             <h1>Premium Hardware for Modern Living</h1>
             <p>Exclusive collection of AH-Series Handles and Knobs.</p>
-            <a href="#products" class="hero-btn">Shop Collection</a>
         </div>
     </section>
 
     <section class="controls">
-        <div class="search-container">
-            <input type="text" id="search-input" placeholder="Search AH-001, AH-002..." onkeyup="filterProducts()">
-        </div>
-        
+        <input type="text" id="search-input" placeholder="Search product ID..." onkeyup="filterProducts()">
         <div class="filter-container">
             <button class="filter-btn active" onclick="setCategory('all', this)">All</button>
             <button class="filter-btn" onclick="setCategory('handels', this)">Handles</button>
-            <button class="filter-btn" onclick="setCategory('knobs', this)">Knobs</button>
-            <button class="filter-btn" onclick="setCategory('concealed', this)">Concealed Handles</button>
         </div>
     </section>
 
-    <main class="product-container" id="products">
-        <div class="product-grid" id="product-grid"></div>
-    </main>
+    <main class="product-grid" id="product-grid"></main>
 
     <div id="cart-sidebar" class="cart-sidebar">
-        <div class="cart-header">
-            <h3>Your Cart</h3>
-            <span class="close-cart" onclick="toggleCart()">&times;</span>
-        </div>
+        <div class="cart-header"><h3>Your Cart</h3><span onclick="toggleCart()">&times;</span></div>
         <div id="cart-items"></div>
         <div class="cart-footer">
             <div class="total-row"><span>Total:</span> ₹<span id="cart-total">0</span></div>
             <button class="checkout-btn" onclick="checkoutWhatsApp()">Confirm via WhatsApp</button>
         </div>
     </div>
-
-    <a href="https://wa.me/919980056119" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-        <span>Chat Now</span>
-    </a>
 
     <script src="script.js"></script>
 </body>

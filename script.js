@@ -7,11 +7,11 @@ const products = [
         colorOptions: ["CP-SATIN", "RG-BS"],
         sizeOptions: ["96mm", "160mm", "224mm", "288mm"],
         variants: [
-            { color: "CP-SATIN", size: "96mm", price: "" },
-            { color: "CP-SATIN", size: "160mm", price: "" },
-            { color: "CP-SATIN", size: "224mm", price: "" },
-            { color: "CP-SATIN", size: "288mm", price: "" },
-            { color: "RG-BS", size: "96mm", price: "" },
+            { color: "CP-SATIN", size: "96mm", price: "219" },
+            { color: "CP-SATIN", size: "160mm", price: "213" },
+            { color: "CP-SATIN", size: "224mm", price: "457" },
+            { color: "CP-SATIN", size: "288mm", price: "67" },
+            { color: "RG-BS", size: "96mm", price: "76" },
             { color: "RG-BS", size: "160mm", price: "" },
             { color: "RG-BS", size: "224mm", price: "" },
             { color: "RG-BS", size: "288mm", price: "" }
